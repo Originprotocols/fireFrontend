@@ -1,7 +1,7 @@
 import {fetchQuery} from "./index";
 
 export function getDonateRecord() {
-    return fetchQuery("arbogshequceshiban", {
+    return fetchQuery("ogpoolkk", {
         text: `{
               allRecords(first: 1000) {
                 id

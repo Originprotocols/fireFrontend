@@ -46,7 +46,7 @@ const items = [
 
 
     getItem('FDT Square', 'FDTSquare', <img className="fireIcon" src={fireIcon7} />, [
-        getItem('OG Pool', 'OGPool'),
+        getItem('OG Pool', 'OGPoolkk'),
         getItem('Seed Pool', 'SeedPool'),
         getItem('Consensus Pool', 'ConsensusPool'),
         getItem('FLM Pool', 'FLMPool'),
@@ -224,7 +224,7 @@ const NavList = () => {
             setSelectNav(obj.keyPath[1])
             localStorage.setItem("activeNav",obj.keyPath[1])
         }else if(develop.ENV === "production"){
-            if(obj.key=="MintPassport" ||obj.key== "PIDList" ||obj.key== "MyPassport"  ){
+            if(obj.key=="MintPassport" ||obj.key== "PIDList" ||obj.key== "MyPassport" ||obj.key== "OGPoolkk"  ){
                 setSelectedKeys(obj.keyPath)
                 history("/"+ obj.key );
                 setSelectNav(obj.keyPath[1])

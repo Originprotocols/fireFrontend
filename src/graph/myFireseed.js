@@ -1,7 +1,7 @@
 import {fetchQuery} from "./index";
 
 export function getPasslist() {
-    return fetchQuery("arbogshequceshiban",{
+    return fetchQuery("firepportmain",{
         text: `{
                   passFireSeeds (first: 5) {
                     id

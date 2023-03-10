@@ -65,7 +65,7 @@ function App() {
                                 <Route path="/PIDList" element={<PidList/>}/>
                                 <Route path="/ChangeUserInfo" element={<ChangeUserInfo/>}/>
                                 <Route path="/Passport" element={<Passport/>}/>
-                                <Route path="/OGPool" element={<OGPool/>}/>
+                                <Route path="/OGPoolkk" element={<OGPool/>}/>
                                 <Route path="/OGPoolAdmin" element={<OGPoolAdmin/>}/>
                                 <Route path="/PassportAdmin" element={<AdminPage/>}/>
 

@@ -10,7 +10,7 @@ export default {
     chainId:42161,
     webside:"http://app.firedao.co",
     forum: "http://forum.firedao.co",
-    graphUrl:"https://api.thegraph.com/subgraphs/name/henry-maker-commits/firepportmain",
+    graphUrl:"https://api.thegraph.com/subgraphs/name/henry-maker-commits/",
 
     ethScan,
     PinataGateWay,

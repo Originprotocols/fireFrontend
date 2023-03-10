@@ -1,7 +1,7 @@
 import {fetchQuery} from "./index";
 
 export function getPidList(amount, skip) {
-    return fetchQuery("arbogshequceshiban",{
+    return fetchQuery("firepportmain",{
         text: `{
                   registers (first:${amount} ,orderBy: pid,orderDirection: desc ,skip:${skip} ) {
                     id
@@ -16,7 +16,7 @@ export function getPidList(amount, skip) {
 }
 
 export function getPidCount(amount) {
-    return fetchQuery("firepassport-nei-bu-kai-fa-ban",{
+    return fetchQuery("firepportmain",{
 
         text: `{
                   registers (first:1 orderBy:pid orderDirection:desc) {
@@ -29,7 +29,7 @@ export function getPidCount(amount) {
 export function getSearchData(searchData, web3) {
     let isAddress = web3.utils.isAddress(searchData);
     if (isAddress) {
-        return fetchQuery({
+        return fetchQuery("firepportmain",{
             text: `{
                   registers (first:1 where:{account:"${searchData}"} ) {
                             id
@@ -42,7 +42,7 @@ export function getSearchData(searchData, web3) {
             }`
         }, "")
     } else {
-        return fetchQuery({
+        return fetchQuery("firepportmain",{
             text: `{
                   registers (first:1 where:{pid:${searchData}} ) {
                            id
